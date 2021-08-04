@@ -19,5 +19,8 @@
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
     "test-not-js": "prettier --check \"**/*.{json,md,scss,yaml,yml}\"",
     "test-js": "eslint --max-warnings 0 --ext \".js,.jsx\" ."
+  },
+  "installConfig": {
+    "pnp": true
   }
 }
