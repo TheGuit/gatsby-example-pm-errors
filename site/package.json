@@ -1,0 +1,29 @@
+{
+  "name": "site",
+  "private": true,
+  "description": "",
+  "version": "3.0.0",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "gatsby": "^3.8.1",
+    "gatsby-plugin-manifest": "^3.8.0",
+    "gatsby-plugin-offline": "^4.8.0",
+    "gatsby-plugin-sitemap": "^4.4.0",
+    "gatsby-theme-child": "*",
+    "gatsby-theme-parent": "*",
+    "global-agent": "^2.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0 || ^17.0.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop --host=0.0.0.0",
+    "start": "npm run develop",
+    "serve": "gatsby serve --prefix-paths",
+    "clean": "gatsby clean"
+  }
+}

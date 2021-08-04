@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  gatsby:
+    build:
+      context: ./docker/node
+      args:
+        - NODE_VERSION=${NODE_VERSION}
+        - UID=${UID}
+        - GID=${GID}
+    working_dir: /var/www
+    entrypoint: "sleep 9999d"
+    volumes:
+      - ./:/var/www/
+      - ./.yarn:/.yarn
+    ports:
+      - '8000:8000'

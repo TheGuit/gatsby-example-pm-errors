@@ -1,0 +1,16 @@
+{
+  "name": "gatsby-theme-child",
+  "private": true,
+  "description": "Child theme",
+  "version": "3.0.0",
+  "keywords": [
+    "gatsby",
+    "theme"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

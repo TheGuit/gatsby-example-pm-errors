@@ -1,54 +1,17 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+## Testing package managers with Gatsby monorepo using workspace themes
 
-## 🚀 Quick start
+Using workspaces to manage themes in Gatsby and have some inheritance between them.
+This simple Gatsby project contains 1 worktree made of 3 workspaces : 
+* site (site information)
+* themes/gatsby-theme-parent
+* themes/gatsby-theme-child
 
-1.  **Create a Gatsby site.**
+For gatsby-friendly users, we're "shadowing" (override here) the page index.js from `gatsby-theme-parent` into `gatsby-theme-child`.
+We also use a graphql query fragment exported in `gatsby-theme-parent` in our child theme.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+#### Dependencies space disk usage
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+* yarn1-without-pnp => folder `node_modules` **458M**
+* yarn1-with-pnp => folder `.pnp` **71M**
+* yarn2-with-pnp => folder `.yarn` **204M**
+* pnpm => folder `node_modules` **415M** + folder `.pnpm-store` **23M**

@@ -1,23 +1,23 @@
 {
-  "name": "my-gatsby-site",
-  "version": "1.0.0",
+  "workspaces": [
+    "site",
+    "themes/*"
+  ],
   "private": true,
-  "description": "My Gatsby Site",
-  "author": "Valentin Fayard",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.1"
+  },
   "keywords": [
     "gatsby"
   ],
+  "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "gatsby": "^3.8.1",
-    "gatsby-plugin-gatsby-cloud": "^2.8.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
+    "test-not-js": "prettier --check \"**/*.{json,md,scss,yaml,yml}\"",
+    "test-js": "eslint --max-warnings 0 --ext \".js,.jsx\" ."
   }
 }
