@@ -9,6 +9,8 @@ services:
         - UID=${UID}
         - GID=${GID}
     working_dir: /var/www
+    environment:
+      - NODE_ENV=development
     entrypoint: "sleep 9999d"
     volumes:
       - ./:/var/www/

@@ -31,6 +31,7 @@ RUN apk --no-cache add shadow \
     python \
     make \
     g++ \
- && usermod --uid "$UID" node ; groupmod --gid "$GID" node
+ && usermod --uid "$UID" node ; groupmod --gid "$GID" node \
+ && npm install -g pnpm
 
 USER node

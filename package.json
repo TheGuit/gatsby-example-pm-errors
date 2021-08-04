@@ -1,9 +1,4 @@
 {
-  "workspaces": [
-    "site",
-    "themes/*"
-  ],
-  "private": true,
   "devDependencies": {
     "eslint": "^7.20.0",
     "eslint-config-prettier": "6.10.0",

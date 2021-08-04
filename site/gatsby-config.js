@@ -12,6 +12,7 @@ const config = {
     author: `atolcd`,
   },
   plugins: [
+    `gatsby-plugin-pnpm`,
     {
       resolve: process.env.THEME_GATSBY,
       options: {},

@@ -1,6 +1,5 @@
 {
   "name": "gatsby-theme-parent",
-  "private": true,
   "description": "Parent theme",
   "version": "3.0.0",
   "dependencies": {
