@@ -19,5 +19,6 @@
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
     "test-not-js": "prettier --check \"**/*.{json,md,scss,yaml,yml}\"",
     "test-js": "eslint --max-warnings 0 --ext \".js,.jsx\" ."
-  }
+  },
+  "packageManager": "yarn@2.4.2"
 }
