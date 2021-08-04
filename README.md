@@ -15,3 +15,5 @@ We also use a graphql query fragment exported in `gatsby-theme-parent` in our ch
 * yarn1-with-pnp => folder `.pnp` **71M**
 * yarn2-with-pnp => folder `.yarn` **204M**
 * pnpm => folder `node_modules` **415M** + folder `.pnpm-store` **23M**
+
+Gatsby's development server is working.
