@@ -20,10 +20,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
-    "develop": "gatsby develop --host=0.0.0.0",
+    "build": "../.pnp/unplugged/npm-gatsby-cli-3.10.0-b5a5949893dad097715f0f36debaebafcfc47a4d-integrity/node_modules/gatsby-cli/cli.js build --prefix-paths",
+    "develop": "../.pnp/unplugged/npm-gatsby-cli-3.10.0-b5a5949893dad097715f0f36debaebafcfc47a4d-integrity/node_modules/gatsby-cli/cli.js develop --host=0.0.0.0",
     "start": "npm run develop",
-    "serve": "gatsby serve --prefix-paths",
-    "clean": "gatsby clean"
+    "serve": "../.pnp/unplugged/npm-gatsby-cli-3.10.0-b5a5949893dad097715f0f36debaebafcfc47a4d-integrity/node_modules/gatsby-cli/cli.js serve --prefix-paths",
+    "clean": "../.pnp/unplugged/npm-gatsby-cli-3.10.0-b5a5949893dad097715f0f36debaebafcfc47a4d-integrity/node_modules/gatsby-cli/cli.js clean"
   }
 }
