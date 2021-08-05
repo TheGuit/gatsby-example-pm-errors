@@ -8460,6 +8460,7 @@ fsevents@~2.3.2:
   resolution: "gatsby-theme-child@workspace:themes/gatsby-theme-child"
   peerDependencies:
     gatsby: "*"
+    gatsby-theme-parent: "*"
     react: "*"
     react-dom: "*"
   languageName: unknown

@@ -3,6 +3,12 @@
   "private": true,
   "description": "Parent theme",
   "version": "3.0.0",
+  "main": "gatsby-config.js",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "theme"
+  ],
   "dependencies": {
     "dotenv": "^8.2.0",
     "gatsby-plugin-image": "^1.10.1",
@@ -14,21 +20,6 @@
     "gatsby-source-filesystem": "^3.8.0",
     "gatsby-transformer-sharp": "^3.8.0",
     "window-or-global": "^1.0.1"
-  },
-  "keywords": [
-    "gatsby",
-    "theme"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "dotenv": "^8.2.0",
-    "gatsby": "^3.8.1",
-    "gatsby-plugin-manifest": "^3.8.0",
-    "gatsby-plugin-offline": "^4.8.0",
-    "gatsby-plugin-sitemap": "^4.4.0",
-    "gatsby-theme-child": "*",
-    "prop-types": "^15.7.2",
-    "react": "^16.9.0 || ^17.0.0"
   },
   "peerDependencies": {
     "gatsby": "*",
