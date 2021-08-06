@@ -4,6 +4,7 @@
   "description": "",
   "version": "3.0.0",
   "dependencies": {
+    "@yarnpkg/pnpify": "^3.0.0-rc.14",
     "dotenv": "^8.2.0",
     "gatsby": "^3.8.1",
     "gatsby-plugin-manifest": "^3.8.0",
